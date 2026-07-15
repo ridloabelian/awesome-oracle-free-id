@@ -2,13 +2,13 @@
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" alt="Oracle Logo" width="240" />
 
-<h1 align="center">Kitab Oracle Cloud 🗄️ 🇮🇩<br><sub>(VPS Gratis Selamanya)</sub></h1>
+<h1 align="center">Kitab Oracle Cloud 🗄️ 🇮🇩<br><sub>(Always Free Tier)</sub></h1>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1000&color=F80000&center=true&vCenter=true&width=680&lines=4+Core+ARM+%2B+24GB+RAM+GRATIS;Bukan+Trial%2C+Tapi+Always+Free;VPS+Sungguhan+Untuk+Docker;Bangun+Server+Modal+Rp+0" alt="Typing SVG" />
 </p>
 
-Kumpulan panduan, *script* automasi, dan proyek *open-source* untuk memanfaatkan **Oracle Cloud Always Free Tier** — satu-satunya penyedia cloud yang memberikan **VPS sungguhan gratis selamanya** (bukan trial): hingga **4 core ARM Ampere + 24 GB RAM**.
+Kumpulan panduan, *script* automasi, dan proyek *open-source* untuk memanfaatkan **Oracle Cloud Always Free Tier** — resource compute tanpa biaya selama akun, kapasitas region, dan penggunaan memenuhi ketentuan program (bukan trial): alokasi Ampere A1 dapat mencapai **4 OCPU + 24 GB RAM** sesuai dokumentasi dan ketersediaan.
 Dibangun untuk developer & *indie hacker* Indonesia yang butuh server beneran (Docker, database, self-hosting) dengan biaya Rp 0.
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
@@ -19,11 +19,15 @@ Dibangun untuk developer & *indie hacker* Indonesia yang butuh server beneran (D
 
 </div>
 
+> **Audit:** Terakhir diverifikasi **2026-07-15**. Kuota dan kebijakan dapat berubah; cek [sumber resmi](https://www.oracle.com/cloud/free/) sebelum implementasi.
+>
+> **Disclaimer:** Proyek komunitas independen. Tidak berafiliasi dengan atau didukung oleh Oracle Corporation. Oracle dan logonya merupakan merek dagang pemiliknya.
+
 > 🗺️ **Bagian dari seri [Stack Nol Rupiah](https://github.com/ridloabelian/awesome-rp0-id)** — peta lengkap bootstrap gratisan Rp 0 untuk indie hacker Indonesia.
 
 > 🔗 **Seri saudara:** [**Cloudflare**](https://github.com/ridloabelian/awesome-cloudflare-id) (edge) · [**Google**](https://github.com/ridloabelian/awesome-google-free-id) (automasi) · [**Supabase**](https://github.com/ridloabelian/awesome-supabase-id) (database) · [**Telegram**](https://github.com/ridloabelian/awesome-telegram-infra-id) (infra chat). **Oracle melengkapi seri sebagai satu-satunya VPS/compute penuh gratis — untuk beban yang tak muat di serverless (Docker, DB berat, game server, self-hosting).**
 
-Berbeda dari yang lain di seri ini yang berbasis *serverless*, Oracle Cloud memberi Anda **komputer Linux beneran** yang bisa di-SSH, jalankan Docker, database, atau apa pun — dan itu **gratis permanen** (Always Free, tanpa batas waktu). Ini "cheat code" untuk yang butuh kontrol penuh tanpa bayar VPS bulanan.
+Berbeda dari yang lain di seri ini yang berbasis *serverless*, Oracle Cloud memberi Anda **komputer Linux beneran** yang bisa di-SSH, jalankan Docker, database, atau apa pun — dan itu **tersedia tanpa biaya selama memenuhi ketentuan Always Free** (Always Free, tanpa batas waktu). Ini "cheat code" untuk yang butuh kontrol penuh tanpa bayar VPS bulanan.
 
 **Kriteria Kurasi:**
 - Memanfaatkan Oracle Cloud Always Free (permanen, bukan trial 30 hari).
@@ -31,9 +35,12 @@ Berbeda dari yang lain di seri ini yang berbasis *serverless*, Oracle Cloud memb
 - *Open-source* dan idealnya masih aktif di-*maintain*.
 - Bermanfaat untuk developer & solopreneur Indonesia.
 
+
+**Status kurasi:** `Official` = dikelola vendor/organisasi resmi · `Community` = proyek komunitas · `Experimental` = contoh/POC, audit sebelum produksi · `Archived` = read-only/tidak aktif. Lihat [audit katalog lengkap](CATALOG_AUDIT.md) (status, stars, last push, dan sumber README upstream; diverifikasi 2026-07-15).
+
 ---
 
-## 💰 Apa Saja yang GRATIS Selamanya di Oracle?
+## 💰 Apa Saja yang Termasuk Always Free?
 
 | Sumber Daya | Batas Always Free | Catatan |
 |-------------|-------------------|---------|
@@ -50,7 +57,7 @@ Berbeda dari yang lain di seri ini yang berbasis *serverless*, Oracle Cloud memb
 ---
 
 ## Daftar Isi
-- [💰 Apa Saja yang GRATIS Selamanya di Oracle?](#-apa-saja-yang-gratis-selamanya-di-oracle)
+- [💰 Apa Saja yang Termasuk Always Free?](#-apa-saja-yang-termasuk-always-free)
 - [🎯 Auto-Provisioning ARM (Anti "Out of Capacity")](#-auto-provisioning-arm-anti-out-of-capacity)
 - [☸️ Kubernetes (k3s/k8s) Gratis](#️-kubernetes-k3sk8s-gratis)
 - [🚀 PaaS Self-Hosted (Vercel/Heroku Alternative)](#-paas-self-hosted-vercelheroku-alternative)
@@ -77,11 +84,11 @@ Jalankan cluster Kubernetes lengkap di atas 4 core ARM gratis — untuk belajar 
 | Nama | Deskripsi |
 |------|-----------|
 | [garutilorenzo/k3s-oci-cluster](https://github.com/garutilorenzo/k3s-oci-cluster) ![](https://img.shields.io/github/stars/garutilorenzo/k3s-oci-cluster?style=flat&label=%E2%98%85&color=F80000) | Deploy cluster Kubernetes (k3s) gratis penuh menggunakan Terraform di Oracle Always Free. Lengkap & terawat. |
-| [nce/oci-free-cloud-k8s](https://github.com/nce/oci-free-cloud-k8s) ![](https://img.shields.io/github/stars/nce/oci-free-cloud-k8s?style=flat&label=%E2%98%85&color=F80000) | Panduan & IaC untuk menjalankan Kubernetes gratis selamanya di Oracle Cloud. |
+| [nce/oci-free-cloud-k8s](https://github.com/nce/oci-free-cloud-k8s) ![](https://img.shields.io/github/stars/nce/oci-free-cloud-k8s?style=flat&label=%E2%98%85&color=F80000) | Panduan & IaC untuk menjalankan Kubernetes tersedia melalui Always Free di Oracle Cloud. |
 | [r0b2g1t/k3s-cluster-on-oracle-cloud-infrastructure](https://github.com/r0b2g1t/k3s-cluster-on-oracle-cloud-infrastructure) ![](https://img.shields.io/github/stars/r0b2g1t/k3s-cluster-on-oracle-cloud-infrastructure?style=flat&label=%E2%98%85&color=F80000) | Deploy cluster k3s otomatis penuh, termasuk Infrastructure as Code. |
 
 ## 🚀 PaaS Self-Hosted (Vercel/Heroku Alternative)
-Punya "Vercel/Heroku" sendiri di VPS gratis — deploy app dengan git push, gratis selamanya.
+Punya "Vercel/Heroku" sendiri di VPS gratis — deploy app dengan git push, tersedia melalui Always Free.
 
 | Nama | Deskripsi |
 |------|-----------|
@@ -139,13 +146,8 @@ sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT
 sudo netfilter-persistent save
 ```
 
-### 3. Cegah Instance Di-reclaim (jaga tetap "aktif")
-Oracle bisa mengambil kembali instance yang benar-benar idle. Pastikan ada beban ringan:
-```bash
-# Contoh: cron ringan tiap 5 menit agar CPU tidak 0% terus (jangan berlebihan)
-# crontab -e
-*/5 * * * * /usr/bin/uptime > /dev/null 2>&1
-```
+### 3. Reclaim & Kebijakan Penggunaan
+Oracle dapat mengambil kembali resource idle sesuai kebijakan layanan. Jalankan **workload nyata**, pantau notifikasi akun, dan siapkan backup. Jangan membuat trafik atau beban palsu untuk mengakali kebijakan reclaim.
 
 ---
 

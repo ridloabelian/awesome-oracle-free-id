@@ -1,0 +1,36 @@
+name: Weekly link audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * 1"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare report directory
+        run: mkdir -p lychee
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --accept 200,206,429
+            --exclude-mail
+            --output ./lychee/out.md
+            README.md CONTRIBUTING.md CATALOG_AUDIT.md
+          fail: true
+      - name: Create issue when links fail
+        if: failure()
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "chore: weekly link audit found broken links"
+          content-filepath: ./lychee/out.md
+          labels: maintenance,broken-link
