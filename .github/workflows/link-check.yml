@@ -23,7 +23,6 @@ jobs:
             --verbose
             --no-progress
             --accept 200,206,429
-            --exclude-mail
             README.md CONTRIBUTING.md CATALOG_AUDIT.md
           fail: true
       - name: Create issue when links fail
