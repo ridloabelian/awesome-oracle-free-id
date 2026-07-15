@@ -10,7 +10,7 @@ Terima kasih sudah mau berkontribusi di **Kitab Oracle Cloud (VPS Gratis Selaman
    | [nama-repo](https://github.com/user/repo) | Deskripsi singkat berbahasa Indonesia. |
    ```
 3. Pastikan proyek memenuhi **Kriteria Kurasi**:
-   - Berjalan atau memanfaatkan Oracle Cloud Always Free (permanen).
+   - Berjalan atau memanfaatkan resource berlabel Oracle Cloud Always Free, bukan kredit trial sementara.
    - Automasi provisioning, self-hosting, atau IaC.
    - *Open-source* dan idealnya masih aktif di-*maintain*.
    - Bermanfaat untuk konteks developer Indonesia.
