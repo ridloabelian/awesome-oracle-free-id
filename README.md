@@ -19,6 +19,8 @@ Dibangun untuk developer & *indie hacker* Indonesia yang butuh server beneran (D
 
 </div>
 
+> 🗺️ **Bagian dari seri [Stack Nol Rupiah](https://github.com/ridloabelian/awesome-rp0-id)** — peta lengkap bootstrap gratisan Rp 0 untuk indie hacker Indonesia.
+
 > 🔗 **Seri saudara:** [**Cloudflare**](https://github.com/ridloabelian/awesome-cloudflare-id) (edge) · [**Google**](https://github.com/ridloabelian/awesome-google-free-id) (automasi) · [**Supabase**](https://github.com/ridloabelian/awesome-supabase-id) (database) · [**Telegram**](https://github.com/ridloabelian/awesome-telegram-infra-id) (infra chat). **Oracle melengkapi seri sebagai satu-satunya VPS/compute penuh gratis — untuk beban yang tak muat di serverless (Docker, DB berat, game server, self-hosting).**
 
 Berbeda dari yang lain di seri ini yang berbasis *serverless*, Oracle Cloud memberi Anda **komputer Linux beneran** yang bisa di-SSH, jalankan Docker, database, atau apa pun — dan itu **gratis permanen** (Always Free, tanpa batas waktu). Ini "cheat code" untuk yang butuh kontrol penuh tanpa bayar VPS bulanan.
